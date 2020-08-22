@@ -5,13 +5,19 @@
 
 				<div class='panel panel-default'>
 					<div class='panel-body'>
+						<i class="far fa-user pull-right" style='padding-right: 30px; padding-top: 30px;
+						font-size: 40px;'></i>
 						<h1 class='bold'>Adicionar Usuario</h1>
-						<p>Adicione os usuarios para a API</p>
+						<p>Adicione os usuarios para a API Fake</p>
 					</div>
 				</div>
 				
 				<div class='required-field'>
 					<div class='alert alert-info'>
+						<button type="button" class="close" data-dismiss="alert">
+							<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+
 						<p>
 							<i class="fas fa-exclamation-triangle"></i>
 							<strong>(*)</strong> Campos requiridos
@@ -23,6 +29,10 @@
 					<div class='panel-body'>
 						<% if notice %>
 							<div class='alert alert-success'>
+								<button type="button" class="close" data-dismiss="alert">
+									<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+								</button>
+
 								<p>
 									<i class="far fa-check-circle"></i>
 									<%= notice %>		

@@ -14,3 +14,40 @@
  *= require_self
  */
  @import 'bootstrap';
+
+ body {
+ 		position: relative;
+ 		font-family: 'Ubuntu', 'sans-serif', 'serif', 'arial';
+ 		font-size: 16px;
+ }
+
+ .navbar-default {
+ 		position: relative;
+
+ 		.navbar-brand {
+ 	 		position: relative;
+ 	 		text-transform: uppercase;
+ 	 		font-size: 20px;
+ 	 		font-weight: bold;
+ 		}
+ }
+
+ form {
+ 	 input[type=text] {
+ 	 		position: relative;
+ 	 		border: 1px solid #999;
+ 	 		border-radius: 0px;
+ 	 		padding: 22px;
+ 	 }
+
+ 	 small {
+ 	 		position: relative;
+ 	 		margin-top: -2px;
+ 	 		margin-bottom: 2px;
+ 	 }
+ }
+
+ footer {
+ 		position: relative;
+ 		margin-bottom: 0px !important;
+ }
