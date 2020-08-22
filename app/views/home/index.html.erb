@@ -1,0 +1,30 @@
+<div class='container'>
+	<div class='row'>
+		<div class='col-md-12'>
+			<div class='col-md-8 col-md-offset-2'>
+				<h1>Adicionar Usuario</h1>
+				<p>Adicione os usuarios para a API</p>
+				<hr>
+
+				<% form_for(@person, { path: '', method: :post }) do |f| %>
+
+					<div class='field'>
+						<%= f.label :first_name, 'Nome' %>
+						<%= f.text_field :last_name '', class: 'form-control', required: 'required',
+						placeholder: 'Digite o nome', autocomplete: 'off' %>
+					</div>
+
+					<div class='field'>
+						<%= f.label :last_name, 'Sobrenome' %>
+						<%= f.text_field :last_name, class: 'form-control', required: 'required',
+						placeholder: 'Digite seu sobrenome', autocomplete: 'off' %>
+					</div>
+
+					<div class='field'>
+						<%= f.submit nil, class: 'btn btn-primary btn-lg top' %>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
