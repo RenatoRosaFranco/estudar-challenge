@@ -348,6 +348,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   database_cleaner
+  dotenv
   dotenv-rails
   factory_bot_rails
   faraday
