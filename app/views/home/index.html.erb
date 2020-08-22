@@ -12,7 +12,10 @@
 				
 				<div class='required-field'>
 					<div class='alert alert-info'>
-						<strong>(*)</strong> Campos requiridos
+						<p>
+							<i class="fas fa-exclamation-triangle"></i>
+							<strong>(*)</strong> Campos requiridos
+						</p>
 					</div>
 				</div>
 
@@ -20,7 +23,10 @@
 					<div class='panel-body'>
 						<% if notice %>
 							<div class='alert alert-success'>
-								<p><%= notice %></p>
+								<p>
+									<i class="far fa-check-circle"></i>
+									<%= notice %>		
+								</p>
 							</div>
 						<% end %>
 

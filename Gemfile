@@ -57,6 +57,7 @@ group :development, :test do
   gem 'brakeman'
   gem 'rubocop'
   gem 'database_cleaner'
+  gem 'dotenv-rails'
 end
 
 group :development do
