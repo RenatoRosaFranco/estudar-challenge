@@ -4,6 +4,8 @@ require 'faraday'
 require 'json'
 
 class ApiService <:: Object
+	include Interactor
+
 	attr_reader :url, :params
  	
  	def initialize(url)

@@ -1,0 +1,49 @@
+AllCops:
+  DisabledByDefault: true
+  TargetRubyVersion: 2.5
+  Exclude:
+    - bin/*
+    - config/routes.rb
+    - db/seeds.rb
+    - db/schema.rb
+    - db/migrate/*
+    - lib/tasks/*
+    - node_modules/**/*
+    - spec/**/*
+    - vendor/bundle/**/*
+    - vendor/gems/**/*
+    - config/environments/*
+
+DotPosition:
+  EnforcedStyle: leading
+
+Documentation:
+  Enabled: false
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Metrics/BlockLength:
+  Exclude:
+    - 'app/admin/**/*'
+    - 'config/initializers/devise.rb'
+
+Metrics/LineLength:
+  Max: 100
+  Include:
+    - 'app/**/*'
