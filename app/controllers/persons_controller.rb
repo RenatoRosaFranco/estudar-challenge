@@ -3,6 +3,7 @@
 class PersonsController < ApplicationController
 	def create
 		person = Person.new(person_params)
+		binding.pry
 
 		if person.valid?
 			 # do something
@@ -17,7 +18,6 @@ class PersonsController < ApplicationController
 	private
 
 	def person_params
-		params.require(:person)
-			.permit(:first_name, :last_name)
+		params.require(:person).permit(:first_name, :last_name)
 	end
 end
